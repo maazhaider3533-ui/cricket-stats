@@ -1,0 +1,190 @@
+/*index.html and the same is used for a little bit of players.html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    background:#f5f5f5;
+    color:#222;
+}
+header{
+    background:#8E2A3A;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.hero{
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+.hero p{
+    color:#666;
+}
+.cards{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+.card{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease
+}
+.card:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+.card h3{
+    color:#8E2A3A;
+    margin-bottom:15px;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+footer{
+    background:#222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* players.html */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* player.html */
+#backNav{
+    padding: 20px;
+}
+#backNav:hover{
+    text-decoration: underline;
+}
+.player-profile{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.player-profile .card{
+    padding:25px;
+}
+
+.player-profile h3{
+    margin-bottom:20px;
+    color:#8E2A3A;
+}
+
+.stat-row{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
+
+.stat-row:last-child{
+    border-bottom:none;
+}
+
+.stat-row span:first-child{
+    font-weight:600;
+}
+
+.innings{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:20px;
+}
+
+.innings span{
+    background:#8E2A3A;
+    color:white;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+/*matches.html*/
+.scoreboard{
+    width:90%;
+    max-width:700px;
+    margin:50px auto;
+    text-align:center;
+}
+
+.scoreboard h2{
+    margin-bottom:30px;
+    color:#8E2A3A;
+    font-size:2rem;
+}
+
+.score{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:white;
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.team h3{
+    color:#555;
+    margin-bottom:15px;
+    font-size:1.2rem;
+}
+
+.team p{
+    font-size:4rem;
+    font-weight:bold;
+}
+
+.winning{
+    color:#2ecc71;
+}
+
+.losing{
+    color:#e74c3c;
+}
+
+.vs{
+    font-size:2rem;
+    font-weight:bold;
+    color:#888;
+}
