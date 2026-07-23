@@ -72,8 +72,71 @@ nav a:hover{
 footer{
     background:#222;
     color: white;
+    margin-top: 60px;
+}
+.footer-content{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+.footer-about h3{
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-about p{
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.footer-links h4,
+.footer-socials h4{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links a{
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+.footer-links a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.social-icons{
+    display: flex;
+    gap: 15px;
+}
+.social-icons a{
+    background:#333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.social-icons a:hover{
+    background:#8E2A3A;
+    transform: translateY(-4px);
+}
+.footer-bottom{
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 0.85rem;
 }
 /* players.html */
 a{
@@ -187,4 +250,248 @@ a{
     font-size:2rem;
     font-weight:bold;
     color:#888;
+}
+/* matches.html - archive */
+.archive{
+    width:90%;
+    max-width:700px;
+    margin:50px auto 60px;
+}
+
+.archive h2{
+    text-align:center;
+    color:#8E2A3A;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.match-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.match-item{
+    background:white;
+    padding:18px 25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:600;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.match-item:hover{
+    transform:translateX(6px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.match-teams{
+    color:#666;
+    font-weight:400;
+    font-size:0.9rem;
+}
+.year-block{
+    margin-bottom: 40px;
+}
+
+.year-block:last-child{
+    margin-bottom: 0;
+}
+
+.year-block h3{
+    color:#8E2A3A;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+}
+/* animations */
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
+/* hero text has no hover effect, so transform is safe here */
+.hero h2,
+.hero p{
+    animation: fadeInUp 0.6s ease both;
+}
+.hero p{
+    animation-delay: 0.15s;
+}
+
+/* cards/items already have hover transforms, so only fade opacity, no transform */
+.cards .card,
+.match-item,
+.player-profile .card{
+    animation: fadeIn 0.5s ease both;
+}
+.cards a:nth-child(1) .card{ animation-delay: 0.05s; }
+.cards a:nth-child(2) .card{ animation-delay: 0.15s; }
+.cards a:nth-child(3) .card{ animation-delay: 0.25s; }
+.cards a:nth-child(4) .card{ animation-delay: 0.35s; }
+.cards a:nth-child(5) .card{ animation-delay: 0.45s; }
+.cards a:nth-child(6) .card{ animation-delay: 0.55s; }
+
+.footer-content > div{
+    animation: fadeIn 0.6s ease both;
+}
+/* rankings.html */
+.rankings{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto 60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.ranking-card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    padding:25px;
+}
+
+.ranking-card h3{
+    color:#8E2A3A;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.rank-list{
+    list-style:none;
+}
+
+.rank-list li{
+    display:flex;
+    align-items:center;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+.rank-list li:last-child{
+    border-bottom:none;
+}
+
+.rank-pos{
+    width:28px;
+    height:28px;
+    background:#8E2A3A;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:0.85rem;
+    margin-right:15px;
+    flex-shrink:0;
+}
+
+.rank-name{
+    flex:1;
+    font-weight:600;
+}
+
+.rank-stat{
+    font-weight:bold;
+    color:#8E2A3A;
+}
+
+/* highlight the top 3 a bit */
+.rank-list li:nth-child(-n+3) .rank-pos{
+    background:#d4a017;
+}
+.ranking-card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    padding:25px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeIn 0.5s ease both;
+}
+
+.ranking-card:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+/* ===== RESPONSIVE ===== */
+
+/* Tablet and below */
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    nav a{
+        margin: 0 10px;
+    }
+    .hero h2{
+        font-size: 30px;
+    }
+    .score{
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+    .vs{
+        order: 2;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px){
+    .hero h2{
+        font-size: 24px;
+    }
+    .hero p{
+        font-size: 0.9rem;
+    }
+    .cards, .rankings{
+        width: 95%;
+    }
+    .card, .ranking-card{
+        padding: 18px;
+    }
+    .team p{
+        font-size: 3rem;
+    }
+    .match-item{
+        padding: 14px 18px;
+        font-size: 0.9rem;
+    }
+    .footer-content{
+        text-align: center;
+    }
+    .social-icons{
+        justify-content: center;
+    }
+    .player-profile{
+        width: 95%;
+    }
+    .innings{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .innings span{
+        width: 38px;
+        height: 38px;
+        font-size: 0.85rem;
+    }
 }
