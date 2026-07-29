@@ -1,0 +1,40 @@
+{
+  "headToHead": {
+    "teamT": 12,
+    "teamH": 14
+  },
+  "latestMatch": {
+    "teams": "Team H vs Team T",
+    "winner": "Team T"
+  },
+  "matches": [
+    { "year": 2024, "matchNumber": 1, "pdf": "pdfs/2024/match1.pdf" },
+    { "year": 2024, "matchNumber": 2, "pdf": "pdfs/2024/match2.pdf" },
+    { "year": 2024, "matchNumber": 3, "pdf": "pdfs/2024/match3.pdf" },
+    { "year": 2024, "matchNumber": 4, "pdf": "pdfs/2024/match4.pdf" },
+    { "year": 2024, "matchNumber": 5, "pdf": "pdfs/2024/match5.pdf" },
+    { "year": 2024, "matchNumber": 6, "pdf": "pdfs/2024/match6.pdf" },
+
+    { "year": 2025, "matchNumber": 1, "pdf": "pdfs/2025/match1.pdf" },
+    { "year": 2025, "matchNumber": 2, "pdf": "pdfs/2025/match2.pdf" },
+    { "year": 2025, "matchNumber": 3, "pdf": "pdfs/2025/match3.pdf" },
+    { "year": 2025, "matchNumber": 4, "pdf": "pdfs/2025/match4.pdf" },
+    { "year": 2025, "matchNumber": 5, "pdf": "pdfs/2025/match5.pdf" },
+    { "year": 2025, "matchNumber": 6, "pdf": "pdfs/2025/match6.pdf" },
+    { "year": 2025, "matchNumber": 7, "pdf": "pdfs/2025/match7.pdf" },
+    { "year": 2025, "matchNumber": 8, "pdf": "pdfs/2025/match8.pdf" },
+    { "year": 2025, "matchNumber": 9, "pdf": "pdfs/2025/match9.pdf" },
+    { "year": 2025, "matchNumber": 10, "pdf": "pdfs/2025/match10.pdf" },
+    { "year": 2025, "matchNumber": 11, "pdf": "pdfs/2025/match11.pdf" },
+    { "year": 2025, "matchNumber": 12, "pdf": "pdfs/2025/match12.pdf" },
+    { "year": 2025, "matchNumber": 13, "pdf": "pdfs/2025/match13.pdf" },
+    { "year": 2025, "matchNumber": 14, "pdf": "pdfs/2025/match14.pdf" },
+    { "year": 2025, "matchNumber": 15, "pdf": "pdfs/2025/match15.pdf" },
+    { "year": 2025, "matchNumber": 16, "pdf": "pdfs/2025/match16.pdf" },
+    { "year": 2025, "matchNumber": 17, "pdf": "pdfs/2025/match17.pdf" },
+
+    { "year": 2026, "matchNumber": 1, "pdf": "pdfs/2026/match1.pdf" },
+    { "year": 2026, "matchNumber": 2, "pdf": "pdfs/2026/match2.pdf" },
+    { "year": 2026, "matchNumber": 3, "pdf": "pdfs/2026/match3.pdf" }
+  ]
+}
