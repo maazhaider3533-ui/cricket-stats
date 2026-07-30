@@ -162,9 +162,7 @@ a{
     color: inherit;
 }
 /* player.html */
-#backNav{
-    padding: 20px;
-}
+
 #backNav:hover{
     text-decoration: underline;
 }
